@@ -22,14 +22,27 @@ class Model {
         
         // data task from the URLSession
         let dataTask = session.dataTask(with: url!) { (data, respense, error) in
+            
             // error check
             if error != nil || data == nil {
                 return
             }
             
-            // parsing the data into video
+            do{
+                // parsing the data into video
+                let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .iso8601
+                
+                let response = try decoder.decode(Response.self, from: data!)
+                dump(response)
+                print("**성공**")
+            
+            } catch {
+                print("**실패**")
+                
+            }
         }
-        
+  
         // 네트워크 시작
         dataTask.resume()
     }

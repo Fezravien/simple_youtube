@@ -15,8 +15,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
         model.getVideos()
+        
     }
 
 
