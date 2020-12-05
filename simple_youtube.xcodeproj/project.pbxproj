@@ -18,6 +18,8 @@
 		BA6A7D8F257A0968004381EE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6A7D8E257A0968004381EE /* Model.swift */; };
 		BA6A7D92257A1147004381EE /* ConstantsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6A7D91257A1147004381EE /* ConstantsTemplate.swift */; };
 		BA6A7D95257A65D7004381EE /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6A7D94257A65D7004381EE /* Response.swift */; };
+		BA6A7D98257B30F7004381EE /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6A7D97257B30F7004381EE /* VideoTableViewCell.swift */; };
+		BA6A7DA7257B5F95004381EE /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6A7DA6257B5F95004381EE /* CacheManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		BA6A7D8E257A0968004381EE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		BA6A7D91257A1147004381EE /* ConstantsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTemplate.swift; sourceTree = "<group>"; };
 		BA6A7D94257A65D7004381EE /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		BA6A7D97257B30F7004381EE /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		BA6A7DA6257B5F95004381EE /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,18 +72,60 @@
 			children = (
 				BA6A7D732579EB75004381EE /* AppDelegate.swift */,
 				BA6A7D752579EB75004381EE /* SceneDelegate.swift */,
-				BA6A7D772579EB75004381EE /* ViewController.swift */,
-				BA6A7D792579EB75004381EE /* Main.storyboard */,
+				BA6A7D9E257B311D004381EE /* Helpers */,
+				BA6A7D9D257B311B004381EE /* Storyboards */,
+				BA6A7D9C257B3118004381EE /* Models */,
+				BA6A7D9B257B3114004381EE /* Views */,
+				BA6A7D9A257B3111004381EE /* View Controllers */,
 				BA6A7D7C2579EB78004381EE /* Assets.xcassets */,
-				BA6A7D7E2579EB78004381EE /* LaunchScreen.storyboard */,
 				BA6A7D812579EB78004381EE /* Info.plist */,
-				BA6A7D88257A0243004381EE /* Constants.swift */,
-				BA6A7D91257A1147004381EE /* ConstantsTemplate.swift */,
-				BA6A7D8B257A0902004381EE /* Video.swift */,
-				BA6A7D94257A65D7004381EE /* Response.swift */,
-				BA6A7D8E257A0968004381EE /* Model.swift */,
 			);
 			path = simple_youtube;
+			sourceTree = "<group>";
+		};
+		BA6A7D9A257B3111004381EE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BA6A7D772579EB75004381EE /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BA6A7D9B257B3114004381EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA6A7D97257B30F7004381EE /* VideoTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BA6A7D9C257B3118004381EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA6A7D8E257A0968004381EE /* Model.swift */,
+				BA6A7D8B257A0902004381EE /* Video.swift */,
+				BA6A7D94257A65D7004381EE /* Response.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BA6A7D9D257B311B004381EE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BA6A7D792579EB75004381EE /* Main.storyboard */,
+				BA6A7D7E2579EB78004381EE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BA6A7D9E257B311D004381EE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BA6A7D88257A0243004381EE /* Constants.swift */,
+				BA6A7D91257A1147004381EE /* ConstantsTemplate.swift */,
+				BA6A7DA6257B5F95004381EE /* CacheManager.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,8 +204,10 @@
 				BA6A7D742579EB75004381EE /* AppDelegate.swift in Sources */,
 				BA6A7D762579EB75004381EE /* SceneDelegate.swift in Sources */,
 				BA6A7D8F257A0968004381EE /* Model.swift in Sources */,
+				BA6A7DA7257B5F95004381EE /* CacheManager.swift in Sources */,
 				BA6A7D89257A0243004381EE /* Constants.swift in Sources */,
 				BA6A7D8C257A0902004381EE /* Video.swift in Sources */,
+				BA6A7D98257B30F7004381EE /* VideoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
